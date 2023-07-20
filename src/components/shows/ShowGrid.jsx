@@ -1,5 +1,5 @@
 import ShowCard from './ShowCard';
-import { useReducer, useEffect } from 'react';
+
 import { useStarredShows } from '../../lib/useStarredShos';
 
 const ShowGrid = ({ shows }) => {
