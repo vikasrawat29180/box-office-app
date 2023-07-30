@@ -9,7 +9,7 @@ import Seasons from '../components/shows/Seasons';
 import Cast from '../components/shows/Cast';
 import { styled } from 'styled-components';
 import { TextCenter } from '../components/common/TextCenter';
-// import App from '../App';
+import { Link } from 'react-router-dom';
 const Show = () => {
   const { showId } = useParams();
   const { data: showData, error: showError } = useQuery({
@@ -24,9 +24,9 @@ const Show = () => {
   if (showData) {
     return (
       <ShowPageWrapper>
-        {/* <BackHomeWrapper> */}
-        {/* <Link to="/">Go back to home page</Link> */}
-        {/* </BackHomeWrapper> */}
+        <BackHomeWrapper>
+          <Link to="/">Go back to home page</Link>
+        </BackHomeWrapper>
 
         <ShowMainData
           image={showData.image}
