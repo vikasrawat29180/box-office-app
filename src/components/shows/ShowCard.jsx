@@ -5,7 +5,7 @@ import { StarIcon } from '../common/StarIcon';
 import { Link } from 'react-router-dom';
 const ShowCard = ({ name, image, id, summary, onStarMeClick, isStarred }) => {
   const summaryStriped = summary
-    ? summary.split(' ').slice(0, 15).join(' ').replace(/<.+?/g, '') + '...'
+    ? summary.split(' ').slice(0, 15).join(' ').replace(/<.+?>/g, '') + '...'
     : 'No description';
   const starBtnRef = useRef();
   const handleStarClick = () => {
