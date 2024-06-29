@@ -1,4 +1,4 @@
-Project-link:- https://vikasrawat29180.github.io/box-office-app/#/starred
+Project-link:- https://vikasrawat29180.github.io/box-office-app/#/
 
 
 ## Available Scripts
